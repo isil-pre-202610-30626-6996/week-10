@@ -5,6 +5,7 @@ public class Runner {
     private String name;
     private double personalRecord;
     private double qualifyingRecord;
+    private double finalRaceRecord;
 
     public Runner(int id, String name, double personalRecord) {
         this.id = id;
@@ -44,9 +45,17 @@ public class Runner {
         this.qualifyingRecord = qualifyingRecord;
     }
 
+    public double getFinalRaceRecord() {
+        return finalRaceRecord;
+    }
+
+    public void setFinalRaceRecord(double finalRaceRecord) {
+        this.finalRaceRecord = finalRaceRecord;
+    }
+
     @Override
     public String toString() {
-        return name + " with " + personalRecord + " as a personal record.";
+        return name + " with " + String.format("%.2f", personalRecord) + " as a personal record.";
     }
 
 }

@@ -20,5 +20,9 @@ public class App {
         competition.qualifyRunners();
 
         competition.showQualifiedRunners();
+
+        competition.finalRace();
+
+        competition.showFinalRaceResults();
     }
 }
