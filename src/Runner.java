@@ -1,8 +1,10 @@
+
 public class Runner {
+
     private int id;
     private String name;
     private double personalRecord;
-    
+
     public Runner(int id, String name, double personalRecord) {
         this.id = id;
         this.name = name;
@@ -33,4 +35,8 @@ public class Runner {
         this.personalRecord = personalRecord;
     }
 
+    @Override
+    public String toString() {
+        return name + " with " + personalRecord + " as a personal record.";
+    }
 }

@@ -18,4 +18,18 @@ public class Competition {
         runners.add(runner);
     }
 
+    public void showRunners() {
+
+        System.out.println("========================");
+        System.out.println("Runners in " + name);
+        System.out.println("========================");
+        System.out.println("");
+
+        for (Runner runner : runners) {
+            System.out.println(runner);
+        }
+
+        System.out.println("");
+    }
+
 }

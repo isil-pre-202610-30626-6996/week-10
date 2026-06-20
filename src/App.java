@@ -15,5 +15,6 @@ public class App {
         competition.addRunner(new Runner(9, "Diego Ramírez", 42));
         competition.addRunner(new Runner(10, "Isabel Gómez", 41));
 
+        competition.showRunners();
     }
 }
