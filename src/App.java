@@ -16,5 +16,9 @@ public class App {
         competition.addRunner(new Runner(10, "Isabel Gómez", 41));
 
         competition.showRunners();
+
+        competition.qualifyRunners();
+
+        competition.showQualifiedRunners();
     }
 }

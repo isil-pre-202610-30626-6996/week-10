@@ -4,6 +4,7 @@ public class Runner {
     private int id;
     private String name;
     private double personalRecord;
+    private double qualifyingRecord;
 
     public Runner(int id, String name, double personalRecord) {
         this.id = id;
@@ -35,8 +36,17 @@ public class Runner {
         this.personalRecord = personalRecord;
     }
 
+    public double getQualifyingRecord() {
+        return qualifyingRecord;
+    }
+
+    public void setQualifyingRecord(double qualifyingRecord) {
+        this.qualifyingRecord = qualifyingRecord;
+    }
+
     @Override
     public String toString() {
         return name + " with " + personalRecord + " as a personal record.";
     }
+
 }
